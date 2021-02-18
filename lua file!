@@ -1,0 +1,293 @@
+-- MADE BY CONFOR
+local Remote = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+Remote:FireServer("GUI MADE BY SYNAPSESCRIPTIFY/ CPNFOR!! ","All")
+local ragdoll = game:GetService("Players").LocalPlayer.Character:FindFirstChild("Local Ragdoll")
+
+-- Setup:
+Luazifier = {} 
+setmetatable(Luazifier, {__metatable = "Don' t touch my table P-Pervert!"})
+
+-- Instances:
+Luazifier.ScreenGui1 = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+Luazifier.Frame1 = Instance.new("Frame", Luazifier.ScreenGui1)
+Luazifier.TextLabel1 = Instance.new("TextLabel", Luazifier.Frame1)
+Luazifier.TextBox1 = Instance.new("TextBox", Luazifier.Frame1)
+Luazifier.TextButton1 = Instance.new("TextButton", Luazifier.Frame1)
+Luazifier.TextButton2 = Instance.new("TextButton", Luazifier.Frame1)
+
+-- Properties:
+Luazifier.ScreenGui1.DisplayOrder = 0
+Luazifier.ScreenGui1.Enabled = true
+Luazifier.ScreenGui1.IgnoreGuiInset = false
+Luazifier.ScreenGui1.Name = "ScreenGui"
+Luazifier.ScreenGui1.ResetOnSpawn = true
+Luazifier.ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Luazifier.ScreenGui1.Archivable = true
+Luazifier.ScreenGui1.AutoLocalize = true
+
+
+Luazifier.Frame1.Active = false
+Luazifier.Frame1.AnchorPoint = Vector2.new(0, 0)
+Luazifier.Frame1.BackgroundColor3 = Color3.new(0.184314, 0.184314, 0.184314)
+Luazifier.Frame1.BackgroundTransparency = 0.5
+Luazifier.Frame1.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Luazifier.Frame1.BorderSizePixel = 1
+Luazifier.Frame1.LayoutOrder = 0
+Luazifier.Frame1.Name = "Frame"
+Luazifier.Frame1.Position = UDim2.new(0.050000000745058, 0, 0.13144962489605, 0)
+Luazifier.Frame1.Rotation = 0
+Luazifier.Frame1.Selectable = false
+Luazifier.Frame1.Size = UDim2.new(0, 276, 0, 185)
+Luazifier.Frame1.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Luazifier.Frame1.Style = Enum.FrameStyle.Custom
+Luazifier.Frame1.Visible = true
+Luazifier.Frame1.ZIndex = 1
+Luazifier.Frame1.Archivable = true
+Luazifier.Frame1.ClipsDescendants = false
+Luazifier.Frame1.AutoLocalize = true
+
+
+Luazifier.TextLabel1.Active = false
+Luazifier.TextLabel1.AnchorPoint = Vector2.new(0, 0)
+Luazifier.TextLabel1.BackgroundColor3 = Color3.new(0.172549, 0.172549, 0.172549)
+Luazifier.TextLabel1.BackgroundTransparency = 0.5
+Luazifier.TextLabel1.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Luazifier.TextLabel1.BorderSizePixel = 1
+Luazifier.TextLabel1.LayoutOrder = 0
+Luazifier.TextLabel1.Name = "TextLabel"
+Luazifier.TextLabel1.Position = UDim2.new(0.13768115639687, 0, 0.075675673782825, 0)
+Luazifier.TextLabel1.Rotation = 0
+Luazifier.TextLabel1.Selectable = false
+Luazifier.TextLabel1.Size = UDim2.new(0, 200, 0, 50)
+Luazifier.TextLabel1.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Luazifier.TextLabel1.Visible = true
+Luazifier.TextLabel1.ZIndex = 1
+Luazifier.TextLabel1.Archivable = true
+Luazifier.TextLabel1.ClipsDescendants = false
+Luazifier.TextLabel1.AutoLocalize = true
+Luazifier.TextLabel1.Font = Enum.Font.SciFi
+Luazifier.TextLabel1.Text = "Headless GUI made by CONFOR"
+Luazifier.TextLabel1.TextColor3 = Color3.new(0, 0, 0)
+Luazifier.TextLabel1.TextScaled = true
+Luazifier.TextLabel1.TextSize = 14
+Luazifier.TextLabel1.TextStrokeColor3 = Color3.new(0, 0, 0)
+Luazifier.TextLabel1.TextStrokeTransparency = 1
+Luazifier.TextLabel1.TextTransparency = 0
+Luazifier.TextLabel1.TextTruncate = Enum.TextTruncate.None
+Luazifier.TextLabel1.TextWrapped = true
+Luazifier.TextLabel1.TextXAlignment = Enum.TextXAlignment.Center
+Luazifier.TextLabel1.TextYAlignment = Enum.TextYAlignment.Center
+
+
+Luazifier.TextBox1.Active = true
+Luazifier.TextBox1.AnchorPoint = Vector2.new(0, 0)
+Luazifier.TextBox1.BackgroundColor3 = Color3.new(0.470588, 0.470588, 0.470588)
+Luazifier.TextBox1.BackgroundTransparency = 0
+Luazifier.TextBox1.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Luazifier.TextBox1.BorderSizePixel = 1
+Luazifier.TextBox1.ClearTextOnFocus = true
+Luazifier.TextBox1.CursorPosition = 1
+Luazifier.TextBox1.LayoutOrder = 0
+Luazifier.TextBox1.MultiLine = false
+Luazifier.TextBox1.Name = "TextBox1"
+Luazifier.TextBox1.Position = UDim2.new(0.13768115639687, 0, 0.44864866137505, 0)
+Luazifier.TextBox1.Rotation = 0
+Luazifier.TextBox1.Selectable = true
+Luazifier.TextBox1.ShowNativeInput = true
+Luazifier.TextBox1.Size = UDim2.new(0, 200, 0, 50)
+Luazifier.TextBox1.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Luazifier.TextBox1.Visible = true
+Luazifier.TextBox1.ZIndex = 1
+Luazifier.TextBox1.Archivable = true
+Luazifier.TextBox1.ClipsDescendants = false
+Luazifier.TextBox1.AutoLocalize = true
+Luazifier.TextBox1.Font = Enum.Font.SourceSans
+Luazifier.TextBox1.LineHeight = 1
+Luazifier.TextBox1.PlaceholderText = "Put ussernmae here."
+Luazifier.TextBox1.Text = ""
+Luazifier.TextBox1.TextColor3 = Color3.new(0, 0, 0)
+Luazifier.TextBox1.TextScaled = true
+Luazifier.TextBox1.TextSize = 14
+Luazifier.TextBox1.TextStrokeTransparency = 1
+Luazifier.TextBox1.TextTransparency = 0
+Luazifier.TextBox1.TextTruncate = Enum.TextTruncate.None
+Luazifier.TextBox1.TextWrapped = true
+Luazifier.TextBox1.TextXAlignment = Enum.TextXAlignment.Center
+Luazifier.TextBox1.TextYAlignment = Enum.TextYAlignment.Center
+
+
+Luazifier.TextButton1.Active = true
+Luazifier.TextButton1.AnchorPoint = Vector2.new(0, 0)
+Luazifier.TextButton1.BackgroundColor3 = Color3.new(0.831373, 0.831373, 0.831373)
+Luazifier.TextButton1.BackgroundTransparency = 0
+Luazifier.TextButton1.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Luazifier.TextButton1.BorderSizePixel = 1
+Luazifier.TextButton1.LayoutOrder = 0
+Luazifier.TextButton1.Modal = false
+Luazifier.TextButton1.Name = "TextButton"
+Luazifier.TextButton1.Position = UDim2.new(0.25362318754196, 0, 0.80540537834167, 0)
+Luazifier.TextButton1.Rotation = 0
+Luazifier.TextButton1.Selectable = true
+Luazifier.TextButton1.Selected = false
+Luazifier.TextButton1.Size = UDim2.new(0, 140, 0, 24)
+Luazifier.TextButton1.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Luazifier.TextButton1.Style = Enum.ButtonStyle.Custom
+Luazifier.TextButton1.Visible = true
+Luazifier.TextButton1.ZIndex = 1
+Luazifier.TextButton1.Archivable = true
+Luazifier.TextButton1.ClipsDescendants = false
+Luazifier.TextButton1.AutoLocalize = true
+Luazifier.TextButton1.Font = Enum.Font.SciFi
+Luazifier.TextButton1.Text = "Headless"
+Luazifier.TextButton1.TextColor3 = Color3.new(0, 0, 0)
+Luazifier.TextButton1.TextScaled = true
+Luazifier.TextButton1.TextSize = 14
+Luazifier.TextButton1.TextStrokeColor3 = Color3.new(0, 0, 0)
+Luazifier.TextButton1.TextStrokeTransparency = 1
+Luazifier.TextButton1.TextTransparency = 0
+Luazifier.TextButton1.TextTruncate = Enum.TextTruncate.None
+Luazifier.TextButton1.TextWrapped = true
+Luazifier.TextButton1.TextXAlignment = Enum.TextXAlignment.Center
+Luazifier.TextButton1.TextYAlignment = Enum.TextYAlignment.Center
+
+
+Luazifier.TextButton2.Active = true
+Luazifier.TextButton2.AnchorPoint = Vector2.new(0, 0)
+Luazifier.TextButton2.BackgroundColor3 = Color3.new(1, 1, 1)
+Luazifier.TextButton2.BackgroundTransparency = 1
+Luazifier.TextButton2.BorderColor3 = Color3.new(0.105882, 0.164706, 0.207843)
+Luazifier.TextButton2.BorderSizePixel = 1
+Luazifier.TextButton2.LayoutOrder = 0
+Luazifier.TextButton2.Modal = false
+Luazifier.TextButton2.Name = "TextButton"
+Luazifier.TextButton2.Position = UDim2.new(0.8731883764267, 0, 0, 0)
+Luazifier.TextButton2.Rotation = 0
+Luazifier.TextButton2.Selectable = true
+Luazifier.TextButton2.Selected = false
+Luazifier.TextButton2.Size = UDim2.new(0, 35, 0, 37)
+Luazifier.TextButton2.SizeConstraint = Enum.SizeConstraint.RelativeXY
+Luazifier.TextButton2.Style = Enum.ButtonStyle.Custom
+Luazifier.TextButton2.Visible = true
+Luazifier.TextButton2.ZIndex = 1
+Luazifier.TextButton2.Archivable = true
+Luazifier.TextButton2.ClipsDescendants = false
+Luazifier.TextButton2.AutoLocalize = true
+Luazifier.TextButton2.Font = Enum.Font.SourceSans
+Luazifier.TextButton2.Text = "X"
+Luazifier.TextButton2.TextColor3 = Color3.new(0.666667, 0, 0)
+Luazifier.TextButton2.TextScaled = true
+Luazifier.TextButton2.TextSize = 14
+Luazifier.TextButton2.TextStrokeColor3 = Color3.new(0, 0, 0)
+Luazifier.TextButton2.TextStrokeTransparency = 1
+Luazifier.TextButton2.TextTransparency = 0
+Luazifier.TextButton2.TextTruncate = Enum.TextTruncate.None
+Luazifier.TextButton2.TextWrapped = true
+Luazifier.TextButton2.TextXAlignment = Enum.TextXAlignment.Center
+Luazifier.TextButton2.TextYAlignment = Enum.TextYAlignment.Center
+
+
+-- Scripts:
+function LUAZIFIER_SCRIPT1() -- Luazifier.TextButton1
+local script = Instance.new("LocalScript")
+script.Parent = Luazifier.TextButton1
+script.Disabled = false
+
+
+script.Parent.MouseButton1Click:Connect(function()
+    local Target = Luazifier.TextBox1.Text
+        print ("Is in workspace")
+	print (Target)
+local tool
+for i,v in pairs (game.Players:GetPlayers()) do
+	tool = v.Backpack:FindFirstChild'OddPotion' or v.Character:FindFirstChild'OddPotion'
+	if tool then break end
+end
+
+for i,v in pairs (game.Players:GetPlayers()) do
+	tool = v.Backpack:FindFirstChild'OddPotion' or v.Character:FindFirstChild'OddPotion'
+	if tool then break end
+end
+
+for i,v in pairs(workspace:WaitForChild(Target).Head:GetChildren()) do
+	tool.TransEvent:FireServer(v,1)
+end
+
+for i,v in pairs(game.Players:WaitForChild(Target).Character:GetChildren()) do
+	if v.Name == "Head" and v:GetDescendants() then
+		tool.TransEvent:FireServer(v,1)
+		end
+	end
+end)
+
+
+
+
+end
+coroutine.resume(coroutine.create(LUAZIFIER_SCRIPT1))
+
+function LUAZIFIER_SCRIPT2() -- Luazifier.Frame1
+local script = Instance.new("LocalScript")
+script.Parent = Luazifier.Frame1
+script.Disabled = false
+
+-- Enjoy! :D
+
+
+function dragify(Frame)
+	dragToggle = nil
+	dragSpeed = .25 -- You can edit this.
+	dragInput = nil
+	dragStart = nil
+	dragPos = nil
+
+	function updateInput(input)
+		Delta = input.Position - dragStart
+		Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+		game:GetService("TweenService"):Create(Frame, TweenInfo.new(.25), {Position = Position}):Play()
+	end
+
+	Frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = Frame.Position
+			input.Changed:Connect(function()
+				if (input.UserInputState == Enum.UserInputState.End) then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+
+	Frame.InputChanged:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+			dragInput = input
+		end
+	end)
+
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if (input == dragInput and dragToggle) then
+			updateInput(input)
+		end
+	end)
+end
+dragify(script.Parent) 
+
+end
+coroutine.resume(coroutine.create(LUAZIFIER_SCRIPT2))
+
+function LUAZIFIER_SCRIPT3() -- Luazifier.TextButton2
+local script = Instance.new("LocalScript")
+script.Parent = Luazifier.TextButton2
+script.Disabled = false
+
+script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Visible = false  -- parent parent = Frame 
+	print ("closing UI")
+end)
+
+ragdoll:Remove()
+
+end
+coroutine.resume(coroutine.create(LUAZIFIER_SCRIPT3))
+
